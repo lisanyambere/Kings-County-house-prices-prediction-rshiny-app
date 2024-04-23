@@ -161,7 +161,7 @@ server<-function(input,output){
       Longitude=as.numeric(input$Longitude)
       
     )
-    predict(rfmodel,new_data)
+    predict(regr,new_data)
   })
   output$prediction<-renderText({
     if(input$predict>0){
